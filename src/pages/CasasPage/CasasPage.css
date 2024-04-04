@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.contC {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    gap: 30px;
+    justify-content: center;
+}
+
+
+.contC-i {
+    width: 248px;
+    height: 280px;
+    margin: 0 0 0 28px;
+
+}
+
+.contC-p {
+    font-size: 20px;
+}

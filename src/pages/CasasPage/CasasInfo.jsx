@@ -1,11 +1,11 @@
 import axios from "axios"
-import './Casas.css'
+import './CasasInfo.css'
 import { useState, useEffect } from "react"
 
 
 export default function Casas() {
 
-    const baseUrl = `http://localhost:3000/houses` + (name)
+    const baseUrl = `http://localhost:3000/houses`
     const [casas, setCasas] = useState([])
     // const [name, setName] = useState(1)
 
@@ -23,7 +23,7 @@ export default function Casas() {
     useEffect(() => {
         getCasas();
 
-    }, [])
+    },)
 
     return (
         <div className="cont">
