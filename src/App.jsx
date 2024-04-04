@@ -1,5 +1,5 @@
 import './App.css'
-import { Casas } from './components/Casas'
+import Casas from './components/Casas'
 
 function App() {
 

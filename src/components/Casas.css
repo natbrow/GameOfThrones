@@ -1,0 +1,25 @@
+.cont {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+
+img {
+    width: 267px;
+    height: 320px;
+    margin: 66px 150px 30px 151px;
+
+}
+
+.cont-logo {
+    width: 1347px;
+    height: 100%;
+    border: solid 1px;
+    gap: 10px;
+}
+
+.cont-info {
+    display: flex;
+    justify-content: space-between;
+}
