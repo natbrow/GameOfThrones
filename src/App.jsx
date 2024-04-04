@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+=======
+import { useState } from 'react'
+>>>>>>> develop
 import './App.css'
 import PersonajesPage from './pages/PersonajesPage/PersonajesPage'
 import CasasPage from './pages/CasasPage/CasasPage'
@@ -10,6 +14,7 @@ import MenuPage from './pages/MenuPage.jsx/MenuPage';
 
 
 function App() {
+<<<<<<< HEAD
   return (
     <div>
     <Router>
@@ -23,6 +28,14 @@ function App() {
       </Router>
     </div>
   );
+=======
+
+  return (
+    <>
+
+    </>
+  )
+>>>>>>> develop
 }
 
 export default App;
