@@ -1,25 +1,29 @@
 import './CasasInfo.css';
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
-export default function CasasInfo({ casa }) {
+export default function CasasInfo() {
     const baseUrl = `http://localhost:3000/houses/`;
     const [house, setHouse] = useState(null);
+    const { id } = useParams();
+
+
+    const getHouse = async () => {
+        const res = await axios.get(baseUrl + id);
+        setHouse(res.data);
+    }
 
     useEffect(() => {
-        const getHouse = async () => {
-            const res = await axios.get(baseUrl + casa.id);
-            setHouse(res.data);
-        };
         getHouse();
-    }, [baseUrl, casa.id]);
+    }, []);
 
     return (
-        <div className="cont">
+        <div>
             {house && (
-                <section>
+                <section className="cont">
                     <div className="cont-logo">
-                        <img src={house.image} alt={house.name} />
+                        <img src={house.image} alt={house.name} className='cont-img' />
                         <h1>{house.name}</h1>
                     </div>
 
