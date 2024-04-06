@@ -6,22 +6,22 @@ function Menu() {
   return (
     <nav className='nav-menu'>
       <ul>
-        <li>
+        <li className='nav-menu_li'>
           <NavLink exact="true" to="/">
             Home
           </NavLink>
         </li>
-        <li>
+        <li className='nav-menu_li'>
           <NavLink to="/personajes">
             Personajes
           </NavLink>
         </li>
-        <li>
+        <li className='nav-menu_li'>
           <NavLink to="/casas">
             Casas
           </NavLink>
         </li>
-        <li>
+        <li className='nav-menu_li'>
           <NavLink to="/cronologia">
             Cronología
           </NavLink>
