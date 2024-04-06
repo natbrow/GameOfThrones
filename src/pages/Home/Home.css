@@ -11,7 +11,7 @@
 .letra {
     display: flex;
     align-items: center;
-    font-size: 150px;
+    font-size: 120px;
     flex-wrap: wrap;
     width: 55%;
     justify-content: center;

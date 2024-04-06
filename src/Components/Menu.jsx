@@ -23,7 +23,7 @@ function Menu() {
         </li>
         <li className='nav-menu_li'>
           <NavLink to="/cronologia">
-            Cronología
+            Cronologia
           </NavLink>
         </li>
       </ul>

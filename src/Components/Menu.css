@@ -3,7 +3,7 @@
     bottom: 0;
     width: 100%;
     background-color: transparent;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -11,10 +11,11 @@
 
 .nav-menu li {
     display: inline;
-    margin: 100px;
+    margin: 80px;
 
 }
 
 .nav-menu a {
-    font-size: 40px;
+    font-size: 30px;
+    color: white;
 }
