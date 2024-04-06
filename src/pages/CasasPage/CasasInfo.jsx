@@ -1,49 +1,42 @@
-import axios from "axios"
-import './CasasInfo.css'
-import { useState, useEffect } from "react"
+import './CasasInfo.css';
+import axios from "axios";
+import { useState, useEffect } from "react";
 
+export default function CasasInfo({ casa }) {
+    const baseUrl = `http://localhost:3000/houses/`;
+    const [house, setHouse] = useState(null);
 
-export default function Casas() {
-
-    const baseUrl = `http://localhost:3000/houses`
-    const [casas, setCasas] = useState([])
-    // const [name, setName] = useState(1)
-
-    // const nameCasas = (newName) => {
-    //     setName(newName)
-    //     getCasas(newName)
-    // }
-
-    const getCasas = async () => {
-        const res = await axios.get(baseUrl)
-        console.log(res.data);
-        setCasas(res.data)
-
-    }
     useEffect(() => {
-        getCasas();
-
-    },)
+        const getHouse = async () => {
+            const res = await axios.get(baseUrl + casa.id);
+            setHouse(res.data);
+        };
+        getHouse();
+    }, [baseUrl, casa.id]);
 
     return (
         <div className="cont">
-            {casas.map((casa, index) =>
-                <div key={index}>
-                    <section className="cont-logo">
-                        <div>
-                            <img src={casa.image} />
-                            <p>{casa.name}</p>
-                        </div>
+            {house && (
+                <section>
+                    <div className="cont-logo">
+                        <img src={house.image} alt={house.name} />
+                        <h1>{house.name}</h1>
+                    </div>
 
-                        <div className="cont-info">
-                            <p>SEDE: {casa.settlement}</p>
-                            <p>REGION: {casa.region}</p>
-                            <p>ALIANZAS: {casa.alliances[0]} {" "} {casa.alliances[1]}</p>
-                            <p>RELIGIONES: {casa.religions}</p>
-                            <p>FUNDACION: {casa.foundation}</p>
-                        </div>
-                    </section>
-                </div>)}
+                    <div className="cont-info">
+                        <h3>SEDE: <p className="cont-info_p">{house.settlement}</p></h3>
+                        <h3>REGION: <p className="cont-info_p">{house.region}</p></h3>
+                        <h3>ALIANZAS:
+                            <div>
+                                <p className="cont-info_p">{house.alliances[0]}</p>
+                                <p className="cont-info_p">{house.alliances[1]}</p>
+                            </div>
+                        </h3>
+                        <h3>RELIGIONES: <p className="cont-info_p">{house.religions}</p></h3>
+                        <h3>FUNDACION: <p className="cont-info_p">{house.foundation}</p></h3>
+                    </div>
+                </section>
+            )}
         </div>
-    )
+    );
 }
