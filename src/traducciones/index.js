@@ -1,20 +1,24 @@
-import i18next from 'i18next'
-import { eng } from './en/EN'
-import { esp } from './es/ES'
+import { initReactI18next } from 'react-i18next';
+import i18n from 'i18next'
+import esp from './es/es.json'
+import eng from './en/en.json'
 
-i18next.init({
-    interpolation: {
-        escapeValue: false,
-    },
-    lng: window.location.pathname.substr(1, 2) === 'es' ? 'es' : 'en',
-    resources: {
-        es: {
-            translation: esp
+i18n
+    .use(initReactI18next)
+    .init({
+        interpolation: {
+            escapeValue: false,
         },
-        en: {
-            translation: eng,
+        lng: 'es',
+        fallbackLng: 'en',
+        resources: {
+            es: {
+                translation: esp
+            },
+            en: {
+                translation: eng,
+            }
         }
-    }
-})
+    })
 
-export default i18next
+export default i18n
