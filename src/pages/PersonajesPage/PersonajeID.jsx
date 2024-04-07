@@ -50,13 +50,16 @@ export default function Personaje() {
                             </div>
                             <div>
                                 <h3>Alliances</h3>
-                                {character.alliances}
+                                <p>
+
+                                    {character.alliances}
+                                </p>
 
                             </div>
                             <div>
                                 <h3>Episodes</h3>
 
-                                <SimpleBar style={{ maxHeight: 200, color: 'white' }}>
+                                <SimpleBar style={{ maxHeight: 100, color: 'white' }}>
                                     <ul>
                                         {character.episodes.map((episode, episodeIndex) => (
                                             <li key={episodeIndex}>{episode}</li>
@@ -83,7 +86,7 @@ export default function Personaje() {
                             </div>
                             <div>
                                 <h3>Titles</h3>
-                                <SimpleBar style={{ maxHeight: 100, color: 'white' }}>
+                                <SimpleBar style={{ maxHeight: 70, color: 'white' }}>
                                     <ul>
                                         {character.titles.map((title, titleIndex) => (
                                             <li key={titleIndex}>{title}</li>

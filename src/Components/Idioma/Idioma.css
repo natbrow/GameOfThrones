@@ -12,6 +12,7 @@
     display: flex;
     gap: 30px;
     margin-right: 60px;
+    list-style: none;
 }
 
 .img {

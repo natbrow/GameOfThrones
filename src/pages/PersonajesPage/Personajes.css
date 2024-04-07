@@ -1,127 +1,142 @@
-body {
-    background-color: #242424;
-}
+ @font-face {
+     font-family: 'Got';
+     src: url('public/Game of Thrones.ttf') format('truetype');
+     font-style: normal;
+     font-weight: normal;
+ }
 
-.contenedor {
-    margin-left: 90px;
-    display: flex;
-    width: 1200px;
-    display: flex;
-    width: 1200px;
-    margin-left: 90px;
+ body {
+     background-color: #242424;
+ }
 
-}
+ .contenedor {
+     margin-left: 90px;
+     display: flex;
+     width: 1200px;
+     display: flex;
+     width: 1200px;
+     margin-left: 90px;
 
-.section {
-    padding-top: 80px;
-    height: 100vh;
-}
+ }
 
-/* imagen */
-.t-max {
-    height: 250px;
-    width: 200px;
-    object-fit: cover;
-}
+ .section {
+     padding-top: 80px;
+     height: 100vh;
+     width: 100vw;
+ }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-}
+ /* imagen */
+ .t-max {
+     height: 250px;
+     width: 200px;
+     object-fit: cover;
+ }
 
-.card {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
+ .cards {
+     display: flex;
+     flex-wrap: wrap;
+ }
 
-}
+ .card {
+     margin: 10px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     position: relative;
 
-.card:hover figcaption {
-    display: block;
-    margin: 0;
-    cursor: pointer;
-}
+ }
 
-figcaption {
-    display: none;
-    position: absolute;
-    top: 171px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.64);
-}
+ .card:hover figcaption {
+     display: block;
+     margin: 0;
+     cursor: pointer;
+ }
 
-figcaption p {
-    color: white;
-}
+ figcaption {
+     display: none;
+     position: absolute;
+     top: 171px;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     text-align: center;
+     padding: 15px;
+     background-color: rgba(0, 0, 0, 0.64);
+ }
 
-.simplebar-scrollbar {
-    width: 4px !important;
-    background-color: #ffffff;
-    border-radius: 4px;
-    cursor: pointer;
-}
+ figcaption p {
+     font-family: 'Got';
+     color: white;
+ }
 
-.simplebar-track.simplebar-vertical {
-    width: 4px !important;
-    border-radius: 4px;
-    background-color: #99999921;
-}
+ .simplebar-scrollbar {
+     width: 4px !important;
+     background-color: #ffffff;
+     border-radius: 4px;
+     cursor: pointer;
+ }
 
-.simplebar-scrollbar:hover:before {
+ .simplebar-track.simplebar-vertical {
+     width: 4px !important;
+     border-radius: 4px;
+     background-color: #99999921;
+ }
 
-    cursor: pointer;
-}
+ .simplebar-scrollbar:hover:before {
 
-.contenedor-img {
-    color: white;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+     cursor: pointer;
+ }
 
-.image-info {
-    height: 250px;
-}
+ .contenedor-img {
 
-.titles {
-    display: flex;
-    justify-content: space-evenly;
-}
+     color: white;
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+ }
 
-.titles h3 {
-    font-size: 35px;
-    text-align: center;
-}
+ .image-info {
+     height: 250px;
+ }
 
-.titles li {
-    text-align: center;
-    list-style: none;
-}
+ .titles {
+     display: flex;
+     justify-content: space-evenly;
+ }
 
-.titles ul {
-    padding: 0;
-    margin: 0;
-}
+ .titles h3 {
+     font-size: 20px;
+     text-align: center;
+ }
 
-figure {
-    margin: 0;
-}
+ .titles li {
+     font-size: 10px;
+     text-align: center;
+     list-style: none;
+ }
 
-.contenedor-name {
-    display: flex;
-}
+ .titles ul {
+     padding: 0;
+     margin: 0;
+ }
 
-.contenedor-info {
-    padding: 0 30px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
+ .titles p {
+     font-size: 10px;
+ }
+
+ figure {
+     margin: 0;
+ }
+
+ .contenedor-name {
+     display: flex;
+ }
+
+ .contenedor-info {
+     padding: 0 30px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+ }

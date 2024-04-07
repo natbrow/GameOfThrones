@@ -9,11 +9,19 @@ export default function Idioma() {
     return (
         <section className='menu'>
             <nav className='menu-der'>
-                <button className='button'><img src="./public/Group.png" className='img' />
-                </button>
-                <img src="./public/spain.png" className='img' />
-                <img src="./public/united-kingdom.png" className='img' />
+                <li>
+                    <NavLink exact="true" to="/">
+                        <img src="./public/Group.png" className='img' />
+                    </NavLink>
+                </li>
+                <li>
+                    <img src="./public/spain.png" className='img' />
+                </li>
+                <li>
+                    <img src="./public/united-kingdom.png" className='img' />
+                </li>
             </nav>
+
         </section>
     )
 }

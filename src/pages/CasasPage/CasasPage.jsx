@@ -8,9 +8,8 @@ import { Link } from "react-router-dom";
 
 
 export default function Casas() {
-  const baseUrl = `http://localhost:3000/houses`;
+  const baseUrl = `http://localhost:3004/houses`;
   const [casas, setCasas] = useState([]);
-  // const [casaSeleccionada, setCasaSeleccionada] = useState(null);
 
   const getCasas = async () => {
     const res = await axios.get(baseUrl);
@@ -21,9 +20,7 @@ export default function Casas() {
     getCasas();
   }, []);
 
-  // const handleClickCasa = (casa) => {
-  //   setCasaSeleccionada(casa);
-  // };
+
 
   return (
     // <section className='section'>

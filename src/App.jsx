@@ -7,7 +7,7 @@ import Timeline from './pages/TimeLine/TimeLine.jsx'
 import CasasInfo from './pages/CasasPage/CasasInfo'
 import CasasPage from './pages/CasasPage/CasasPage.jsx'
 import Home from './pages/Home/Home'
-import Menu from './Components/Menu/Menu';
+import Menu from './Components/Menu/Menu.jsx';
 
 function App() {
 
