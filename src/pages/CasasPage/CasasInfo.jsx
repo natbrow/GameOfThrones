@@ -16,7 +16,7 @@ export default function CasasInfo() {
 
     useEffect(() => {
         getHouse();
-    }, []);
+    },);
 
     return (
         <div className="cont">

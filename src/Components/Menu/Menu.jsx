@@ -14,31 +14,12 @@ function Menu() {
     resources: {
       en: {
         translation: {
-          'characters': 'characters',
-          'houses': 'houses',
-          'chronology': 'chronology',
-          'game of thrones': 'Game of <br> Thrones',
-          'house': 'house',
-          'alliances': 'alliances',
-          'episodes': 'episodes',
-          'parents': 'parents',
-          'siblings': 'siblings',
-          'titles': 'titles'
-          // agregar más traducciones aquí...
+
         }
       },
       es: {
         translation: {
-          'characters': 'personajes',
-          'houses': 'casas',
-          'chronology': 'cronologia',
-          'game of thrones': 'Juego de <br> tronos',
-          'house': 'casa',
-          'alliances': 'alianzas',
-          'episodes': 'apariciones',
-          'parents': 'padres',
-          'siblings': 'descendientes',
-          'titles': 'titulos',
+
 
         }
       }
@@ -57,11 +38,11 @@ function Menu() {
       </div>
       <nav className='nav-menu'>
         <ul>
-          <li className='nav-menu_li'>
+          {/* <li className='nav-menu_li'>
             <NavLink exact="true" to="/">
               Home
             </NavLink>
-          </li>
+          </li> */}
           <li className='nav-menu_li'>
             <NavLink to="/personajes">
               Personajes
