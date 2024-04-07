@@ -12,8 +12,9 @@
     color: white;
     display: flex;
     align-items: center;
+    text-align: center;
     font-size: 120px;
     flex-wrap: wrap;
-    width: 55%;
+    width: 100vw;
     justify-content: center;
 }

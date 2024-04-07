@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import axios from 'axios'
+import Buscador from '../../Components/Buscador/Buscador';
 
 
 export default function Personajes() {
@@ -23,6 +24,7 @@ export default function Personajes() {
   }, [])
   return (
     <section className='section'>
+      {/* <Buscador /> */}
       <SimpleBar style={{ maxHeight: 600, color: 'white' }}>
         <div className='contenedor'>
           <div className='cards'>

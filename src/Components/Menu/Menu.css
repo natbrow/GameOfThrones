@@ -2,7 +2,6 @@
     position: fixed;
     bottom: 0;
     background-color: transparent;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -17,4 +16,20 @@
 .nav-menu a {
     font-size: 30px;
     color: white;
+}
+
+.div-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.conjunto {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+}
+
+.buscador {
+    width: 50%;
 }

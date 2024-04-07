@@ -33,6 +33,7 @@ export default function Personaje() {
     }, [])
     return (
         <>
+
             {character &&
                 <section className="section">
 

@@ -1,16 +1,19 @@
-.menu {
+/* .menu {
     position: relative;
     background-color: transparent;
     display: flex;
     justify-content: space-evenly;
     gap: 500px;
+} */
+
+
+.menu-izq {
+
+    margin: 20px 0 0 20px;
 }
 
-.menu-izq {}
-
 .menu-izq-tipo {
-    width: 500px;
-    height: 32px;
-    font-family: Lato;
+    width: 200px;
+    height: 20px;
     font-size: 18px;/
 }

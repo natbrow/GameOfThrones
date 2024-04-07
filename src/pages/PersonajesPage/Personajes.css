@@ -140,3 +140,10 @@
      display: flex;
      flex-direction: column;
  }
+
+ input {
+     background-color: transparent;
+     border: 0;
+     border-bottom: 1px solid white;
+     size: 10px;
+ }

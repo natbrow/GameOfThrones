@@ -23,7 +23,7 @@ export default function Personajes() {
     return (
 
         <div className='contenedor'>
-            <SimpleBar style={{ maxHeight: 800, color: 'white' }}>
+            <SimpleBar style={{ maxHeight: 700, color: 'white' }}>
                 <div className='cards'>
                     {personajes.map((personaje, index) => <figure className='card' key={index}>
                         <img className='t-max' src={personaje.image} alt={personaje.name} />
