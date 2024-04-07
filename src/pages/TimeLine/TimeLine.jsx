@@ -28,7 +28,7 @@ export default function Timeline() {
     setAscendingOrder(!ascendingOrder);
   };
 
-      return (
+    return (
     <div className='cronologia'>
       <div className='linea-vertical'></div>
       <div className='container'>

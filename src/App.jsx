@@ -9,9 +9,9 @@ import PersonajeID from './pages/PersonajesPage/PersonajeID';
 import CasasInfo from './pages/CasasPage/CasasInfo'
 import Casas from './pages/CasasPage/CasasPage.jsx'
 import Home from './pages/Home/Home'
+import Volver from './Components/Volver/Volver.jsx';
 
 function App() {
-
 
   return (
     <div>
