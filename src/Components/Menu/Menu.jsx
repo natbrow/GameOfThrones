@@ -12,13 +12,9 @@ function Menu() {
     i18n.changeLanguage(idiom);
   }
   return (
-    <section>
+    <section className='menuu'>
       <div className='conjunto'>
-        <div className='buscador'>
-          <Buscador />
-        </div>
         <div className='div-menu'>
-          <Idioma idioma={cambiarIdioma} />
           <nav className='nav-menu'>
             <ul>
               <li className='nav-menu_li'>

@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import axios from 'axios'
+// import Buscador from '../../Components/Buscador/Buscador';
+import Idioma from '../../Components/Idioma/Idioma';
+import HomeIcon from '../../Components/HomeIcon/HomeIcon';
 import Buscador from '../../Components/Buscador/Buscador';
+import Menu from '../../Components/Menu/Menu';
 
 
 export default function Personajes() {
@@ -23,26 +27,43 @@ export default function Personajes() {
     getPersonajes();
   }, [])
   return (
-    <section className='section'>
-      {/* <Buscador /> */}
-      <SimpleBar style={{ maxHeight: 600, color: 'white' }}>
-        <div className='contenedor'>
-          <div className='cards'>
-            {personajes.map((personaje, index) =>
 
-              <figure className='card' key={index}>
-                <img className='t-max' src={personaje.image} alt={personaje.name} />
-                <figcaption>
-                  <Link to={`/personajes/${personaje.id}`}>
-                    <p> {personaje.name}</p>
-                  </Link>
-                </figcaption>
-              </figure>)}
-          </div>
+    <>
+      <section>
+
+        <div>
+          <Buscador />
+
+          <HomeIcon />
+          <Idioma></Idioma>
         </div>
-      </SimpleBar>
-    </section>
+
+      </section>
+
+      <section className='section'>
+
+        {/* <Buscador /> */}
+        <SimpleBar style={{ maxHeight: 600, color: 'white' }}>
+          <div className='contenedor'>
+            <div className='cards'>
+              {personajes.map((personaje, index) =>
+
+                <figure className='card' key={index}>
+                  <img className='t-max' src={personaje.image} alt={personaje.name} />
+                  <figcaption>
+                    <Link to={`/personajes/${personaje.id}`}>
+                      <p> {personaje.name}</p>
+                    </Link>
+                  </figcaption>
+                </figure>)}
+            </div>
+          </div>
+        </SimpleBar>
+        <Menu />
+      </section>
+    </>
   )
+
 
 }
 

@@ -1,6 +1,6 @@
-// import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React from 'react'
 import PersonajesPage from './pages/PersonajesPage/PersonajesPage.jsx'
 import PersonajeID from './pages/PersonajesPage/PersonajeID';
 import Timeline from './pages/TimeLine/TimeLine.jsx'
@@ -8,17 +8,14 @@ import CasasInfo from './pages/CasasPage/CasasInfo'
 import CasasPage from './pages/CasasPage/CasasPage.jsx'
 import Home from './pages/Home/Home'
 import Menu from './Components/Menu/Menu.jsx';
-
 function App() {
-
-
   return (
     <div>
       <Router>
-        <div >
+        {/* <div >
           <Menu
           />
-        </div>
+        </div> */}
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/personajes/*" element={<PersonajesPage />} />
@@ -26,13 +23,11 @@ function App() {
           <Route path="/casas" element={<CasasPage />} />
           <Route path="/casas/:id" element={<CasasInfo />} />
           <Route path="/cronologia/*" element={<Timeline />} />
-
+          <Route path='/personaje/:id' element={<PersonajeID />} />
         </Routes>
       </Router>
 
     </div>
-
-
   );
 
 }

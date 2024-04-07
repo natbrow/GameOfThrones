@@ -4,14 +4,14 @@
 } */
 
 .contC {
-    background-color: black;
+    background-color: #242424;
     display: flex;
     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
     overflow-y: auto;
     padding: 100px;
-    height: 450px;
+    height: 100vh;
 }
 
 /* .simplebar-scrollbar {

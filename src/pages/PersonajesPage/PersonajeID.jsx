@@ -4,19 +4,16 @@ import { useParams } from "react-router-dom";
 import './Personajes.css'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import HomeIcon from "../../Components/HomeIcon/HomeIcon";
+import Idioma from "../../Components/Idioma/Idioma";
+import Menu from "../../Components/Menu/Menu";
 
 
 
 export default function Personaje() {
     const [character, setCharacter] = useState()
-    // const [house, setHouse] = useState([]);
     const { id } = useParams();
 
-    // const getHouse = async () => {
-    //     const res = await axios.get('http://localhost:3004/houses');
-    //     console.log(res.data);
-    //     setHouse(res.data)
-    // }
 
     const getCharacter = async () => {
         const res = await axios.get('http://localhost:3004/characters/' + id)
@@ -26,14 +23,19 @@ export default function Personaje() {
     }
 
     useEffect(() => {
-        // getHouse();
 
         getCharacter()
 
     }, [])
     return (
         <>
-
+            <section>
+                <div>
+                    <HomeIcon />
+                    <Idioma />
+                </div>
+                <Menu />
+            </section>
             {character &&
                 <section className="section">
 

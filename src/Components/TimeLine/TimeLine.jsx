@@ -1,9 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import CharacterCard from './CharacterCard';
 import './TimeLine.css'
-import Idioma from '../../Components/Idioma/Idioma';
-import HomeIcon from '../../Components/HomeIcon/HomeIcon';
-import Menu from '../../Components/Menu/Menu';
 
 export default function Timeline() {
   const [characters, setCharacters] = useState([]);
@@ -32,25 +29,17 @@ export default function Timeline() {
   };
 
   return (
-    <>
-      <section>
-        <div>
-          <HomeIcon />
-          <Idioma />
-        </div>
-        <Menu />
-      </section>
-      <div className='cronologia'>
-        <div className='container'>
-          <div className='rectangle-4'>
-            <button onClick={toggleOrder} className='elipse'>o</button>
-            {characters.map(character => (
-              <CharacterCard key={character.id} character={character} />
-            ))}
-          </div>
+
+    <div className='cronologia'>
+      <div className='container'>
+        <div className='rectangle-4'>
+          <button onClick={toggleOrder} className='elipse'>o</button>
+          {characters.map(character => (
+            <CharacterCard key={character.id} character={character} />
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

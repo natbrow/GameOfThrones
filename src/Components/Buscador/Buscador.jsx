@@ -3,11 +3,10 @@ import './Buscador.css';
 
 export default function Buscador() {
     return (
-
-        <div className='menu-izq'>
-            <img src="./public/search.png" />
+        <>
+            <img className='search' src="./public/search.png" />
             <input type='text' className='menu-izq-tipo' placeholder='Buscar...' />
-        </div>
+        </>
 
     )
 }
