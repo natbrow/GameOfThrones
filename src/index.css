@@ -31,11 +31,12 @@ a:hover {
 }
 
 body {
-
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: end;
+  margin: 0;
+  display: flex;
   place-items: center;
 
 }
@@ -44,7 +45,6 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
 
 button {
   border-radius: 8px;
@@ -66,7 +66,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 
 @media (prefers-color-scheme: light) {
   :root {

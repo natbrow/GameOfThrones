@@ -4,10 +4,10 @@ body {
 
 .contenedor {
 
-    display: flex;
-    width: 1200px;
     margin-left: 90px;
 
+    display: flex;
+    width: 1200px;
 }
 
 /* imagen */
@@ -27,22 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
 }
-
-
-.card-img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-o {
-    display: flex;
-    flex-direction: column;
-}
-
-
 
 .card:hover figcaption {
     display: block;
@@ -83,3 +69,18 @@ figcaption p {
 
     cursor: pointer;
 }
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-o {
+    display: flex;
+    flex-direction: column;
+}
+
+/* img {
+    width: 200%;
+} */

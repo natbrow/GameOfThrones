@@ -9,6 +9,7 @@
 }
 
 .letra {
+    color: white;
     display: flex;
     align-items: center;
     font-size: 120px;
