@@ -1,0 +1,19 @@
+.body {
+    background-image: url(./public/image1.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.letra {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 120px;
+    flex-wrap: wrap;
+    width: 55%;
+    justify-content: center;
+}

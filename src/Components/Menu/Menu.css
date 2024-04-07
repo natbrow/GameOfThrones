@@ -1,0 +1,20 @@
+.nav-menu {
+    position: fixed;
+    bottom: 0;
+    background-color: transparent;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-menu li {
+    display: inline;
+    margin: 80px;
+
+}
+
+.nav-menu a {
+    font-size: 30px;
+    color: white;
+}
