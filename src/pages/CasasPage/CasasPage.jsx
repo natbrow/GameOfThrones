@@ -9,10 +9,6 @@ import { Link } from "react-router-dom";
 
 
 export default function Casas() {
-  // const [t, i18n] = useTranslation("global");
-
-
-
   const baseUrl = `http://localhost:3000/houses`;
   const [casas, setCasas] = useState([]);
   // const [casaSeleccionada, setCasaSeleccionada] = useState(null);

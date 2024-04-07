@@ -29,19 +29,20 @@ export default function Timeline() {
   };
 
   return (
-
     <div className='cronologia'>
+      <div className='linea-vertical'></div>
       <div className='container'>
-        <div className='rectangle-4'>
-          <button onClick={toggleOrder} className='elipse'>o</button>
+        <button onClick={toggleOrder} className='elipse'>
+          O
+        </button>
+        <div className='timeline'>
           {characters.map(character => (
-            <CharacterCard key={character.id} character={character} />
+            <div className='character-wrapper' key={character.id}>
+              <CharacterCard character={character} />
+            </div>
           ))}
         </div>
       </div>
     </div>
   );
 }
-
-
-
