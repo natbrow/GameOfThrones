@@ -1,0 +1,16 @@
+.menu {
+    position: relative;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 500px;
+}
+
+.menu-izq {}
+
+.menu-izq-tipo {
+    width: 500px;
+    height: 32px;
+    font-family: Lato;
+    font-size: 18px;/
+}

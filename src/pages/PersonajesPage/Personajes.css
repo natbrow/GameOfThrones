@@ -3,17 +3,24 @@ body {
 }
 
 .contenedor {
-
     margin-left: 90px;
-
     display: flex;
     width: 1200px;
+    display: flex;
+    width: 1200px;
+    margin-left: 90px;
+
+}
+
+.section {
+    padding-top: 80px;
+    height: 100vh;
 }
 
 /* imagen */
 .t-max {
-    height: 400px;
-    width: 250px;
+    height: 250px;
+    width: 200px;
     object-fit: cover;
 }
 
@@ -28,6 +35,18 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
+
+}
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-o {
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover figcaption {
@@ -39,7 +58,7 @@ body {
 figcaption {
     display: none;
     position: absolute;
-    top: 285px;
+    top: 171px;
     left: 0;
     bottom: 0;
     right: 0;

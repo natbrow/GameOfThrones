@@ -1,33 +1,34 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { useState } from 'react'
+import Menu from './components/Menu/Menu'
+import PersonajesPage from './pages/PersonajesPage/PersonajesPage.jsx'
 import './App.css'
-import PersonajesPage from './pages/PersonajesPage/PersonajesPage'
+import PersonajeID from './pages/PersonajesPage/PersonajeID';
+import CasasInfo from './pages/CasasPage/CasasInfo'
 import CasasPage from './pages/CasasPage/CasasPage'
-import CronologiaPage from './pages/CronologiaPage/CronologiaPage'
-import Menu from './components/Menu';
-import MenuPage from './pages/MenuPage.jsx/MenuPage';
-import PersonajesID from './pages/PersonajesPage/PersonajeID'
-import Home from './pages/Home/Home';
-
-
+import Home from './pages/Home/Home'
 
 function App() {
+
 
   return (
     <div>
       <Router>
-        <Menu />
+        <div >
+          <Menu />
+        </div>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path="/personajes/*" element={<PersonajesPage />} />
-          <Route path='/personajes/:id' element={<PersonajesID />} />
-          <Route path="/casas/*" element={<CasasPage />} />
-          <Route path="/cronologia/*" element={<CronologiaPage />} />
+          <Route path='/personaje/:id' element={<PersonajeID />} />
+          <Route path="/casas" element={<CasasPage />} />
+          <Route path="/casas/:id" element={<CasasInfo />} />
         </Routes>
       </Router>
     </div>
-  );
-}
 
+
+  );
+
+}
 export default App;
