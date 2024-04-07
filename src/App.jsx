@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Timeline from './Components/TimeLine/TimeLine.jsx'
+import Timeline from './pages/TimeLine/TimeLine.jsx'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from './Components/Menu/Menu.jsx'

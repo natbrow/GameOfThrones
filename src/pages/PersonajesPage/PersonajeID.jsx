@@ -8,7 +8,7 @@ export default function Personaje() {
     const [character, setCharacter] = useState()
     const { id } = useParams();
     const getCharacter = async () => {
-        const res = await axios.get('http://localhost:3004/characters/' + id)
+        const res = await axios.get('http://localhost:3000/characters/' + id)
         setCharacter(res.data)
         // .then(data => setCharacter(data.data))
         console.log(res.data);
