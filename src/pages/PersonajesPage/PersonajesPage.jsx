@@ -9,7 +9,7 @@ import axios from 'axios'
 export default function Personajes() {
 
   const [personajes, setPersonajes] = useState([])
-  const baseUrl = 'http://localhost:3004/characters'
+  const baseUrl = 'http://localhost:3000/characters'
 
   const getPersonajes = async () => {
     const res = await axios.get(baseUrl)

@@ -28,20 +28,21 @@ export default function Timeline() {
     setAscendingOrder(!ascendingOrder);
   };
 
-    return (
-     
-        <div className='cronologia'>
-            <div className='container'>
-                <div className='rectangle-4'>
-                    <button onClick={toggleOrder} className='elipse'>o</button>
-                    {characters.map(character => (
-                    <CharacterCard key={character.id} character={character} />
-                    ))}
+      return (
+    <div className='cronologia'>
+      <div className='linea-vertical'></div>
+      <div className='container'>
+        <button onClick={toggleOrder} className='elipse'>
+          O
+        </button>
+        <div className='timeline'>
+          {characters.map(character => (
+            <div className='character-wrapper'>
+              <CharacterCard key={character.id} character={character} />
             </div>
+          ))}
         </div>
+      </div>
     </div>
   );
 }
-
-
-
