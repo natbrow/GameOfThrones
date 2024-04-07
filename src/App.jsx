@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import Timeline from './TimeLine/TimeLine'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from './components/Menu/Menu'
@@ -23,11 +25,10 @@ function App() {
           <Route path='/personaje/:id' element={<PersonajeID />} />
           <Route path="/casas" element={<CasasPage />} />
           <Route path="/casas/:id" element={<CasasInfo />} />
+          <Route path="/cronologia" element={<Timeline />} />
         </Routes>
       </Router>
     </div>
-
-
   );
 
 }
