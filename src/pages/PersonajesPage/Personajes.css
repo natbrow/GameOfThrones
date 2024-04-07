@@ -38,17 +38,6 @@ body {
 
 }
 
-.card-img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-}
-
-.card-o {
-    display: flex;
-    flex-direction: column;
-}
-
 .card:hover figcaption {
     display: block;
     margin: 0;
@@ -89,17 +78,50 @@ figcaption p {
     cursor: pointer;
 }
 
-.card-img {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+.contenedor-img {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.card-o {
+.image-info {
+    height: 250px;
+}
+
+.titles {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.titles h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.titles li {
+    text-align: center;
+    list-style: none;
+}
+
+.titles ul {
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+.contenedor-name {
+    display: flex;
+}
+
+.contenedor-info {
+    padding: 0 30px;
+    color: white;
     display: flex;
     flex-direction: column;
 }
-
-/* img {
-    width: 200%;
-} */
