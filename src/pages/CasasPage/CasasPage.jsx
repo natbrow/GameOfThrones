@@ -5,11 +5,11 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import SimpleBar from 'simplebar-react';
 // import 'simplebar/dist/simplebar.min.css';
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 
 
 export default function Casas() {
-  const [t, i18n] = useTranslation("global");
+  // const [t, i18n] = useTranslation("global");
 
 
 
@@ -39,7 +39,7 @@ export default function Casas() {
           <section className="contC-b">
             <img src={casa.image} className="contC-i" alt={casa.name} />
             <Link to={`/casas/${casa.id}`}>
-              <h1 className="contC-h1"> {t({ casa.name })}</h1>
+              <h1 className="contC-h1"> {casa.name}</h1>
             </Link>
           </section>
         </div>
