@@ -31,10 +31,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
   background-color: black;
   justify-content: center;
   align-items: end;
+  margin: 0;
+  display: flex;
   place-items: center;
 }
 

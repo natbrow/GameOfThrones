@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function CasasInfo() {
-    const baseUrl = `http://localhost:3004/houses/`;
+    const baseUrl = `http://localhost:3000/houses/`;
     const [house, setHouse] = useState(null);
     const { id } = useParams();
 
@@ -16,7 +16,7 @@ export default function CasasInfo() {
 
     useEffect(() => {
         getHouse();
-    }, []);
+    },);
 
     return (
         <div className="cont">
