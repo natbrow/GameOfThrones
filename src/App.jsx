@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Timeline from './TimeLine/TimeLine'
+import Timeline from './Components/TimeLine/TimeLine.jsx'
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Menu from './components/Menu/Menu'
+import Menu from './Components/Menu/Menu.jsx'
 import PersonajesPage from './pages/PersonajesPage/PersonajesPage.jsx'
 import './App.css'
 import PersonajeID from './pages/PersonajesPage/PersonajeID';
 import CasasInfo from './pages/CasasPage/CasasInfo'
-import CasasPage from './pages/CasasPage/CasasPage'
+import Casas from './pages/CasasPage/CasasPage.jsx'
 import Home from './pages/Home/Home'
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path="/personajes/*" element={<PersonajesPage />} />
           <Route path='/personaje/:id' element={<PersonajeID />} />
-          <Route path="/casas" element={<CasasPage />} />
+          <Route path="/casas" element={<Casas />} />
           <Route path="/casas/:id" element={<CasasInfo />} />
           <Route path="/cronologia" element={<Timeline />} />
         </Routes>
