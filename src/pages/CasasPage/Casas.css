@@ -1,0 +1,46 @@
+.contC {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    overflow-y: auto;
+    padding: 100px;
+    height: 450px;
+}
+
+
+.contC-b {
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contC-i {
+    width: 180px;
+    height: 210px;
+    margin: 0;
+
+}
+
+
+.contC-h1 {
+    font-size: 20px;
+}
+
+.container {
+    max-width: 800px;
+    /* Define un ancho máximo para el contenedor */
+    margin: 0 auto;
+    /* Centra el contenedor en la página */
+}
+
+.scrollable-content {
+    height: 200px;
+    /* Define una altura fija para la sección */
+    overflow-y: auto;
+    /* Añade desplazamiento vertical si es necesario */
+    padding: 10px;
+    /* Agrega un relleno opcional para el contenido */
+}

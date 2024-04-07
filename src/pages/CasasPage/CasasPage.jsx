@@ -1,9 +1,37 @@
-import React from 'react'
+import axios from "axios";
+import './Casas.css';
+import { useState, useEffect } from "react";
+import CasasInfo from "./CasasInfo";
 
-export default function CasasPage() {
+export default function Casas() {
+  const baseUrl = `http://localhost:3000/houses`;
+  const [casas, setCasas] = useState([]);
+  const [casaSeleccionada, setCasaSeleccionada] = useState(null);
+
+  const getCasas = async () => {
+    const res = await axios.get(baseUrl);
+    setCasas(res.data);
+  };
+
+  useEffect(() => {
+    getCasas();
+  }, []);
+
+  const handleClickCasa = (casa) => {
+    setCasaSeleccionada(casa);
+  };
+
   return (
-      <div>
-         <p>esto es la pagina de casas</p> 
+    <div className="contC">
+      {casas.map((casa, index) => (
+        <div key={index} onClick={() => handleClickCasa(casa)}>
+          <section className="contC-b">
+            <img src={casa.image} className="contC-i" alt={casa.name} />
+            <h1 className="contC-h1">{casa.name}</h1>
+          </section>
+        </div>
+      ))}
+      {casaSeleccionada && <CasasInfo casa={casaSeleccionada} />}
     </div>
-  )
+  );
 }

@@ -3,7 +3,11 @@ body {
 }
 
 .contenedor {
+
     margin-left: 90px;
+
+    display: flex;
+    width: 1200px;
 }
 
 /* imagen */
@@ -19,13 +23,11 @@ body {
 }
 
 .card {
-
     margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-
 }
 
 .card:hover figcaption {
@@ -67,3 +69,18 @@ figcaption p {
 
     cursor: pointer;
 }
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-o {
+    display: flex;
+    flex-direction: column;
+}
+
+/* img {
+    width: 200%;
+} */

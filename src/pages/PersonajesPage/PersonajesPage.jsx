@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './Personajes.css'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
 import Menu from '../../components/Menu'
+import './Personajes.css'
+import axios from 'axios'
 
 
 export default function Personajes() {
@@ -18,11 +19,11 @@ export default function Personajes() {
   const cambiarIdioma = (idiom) => {
     i18n.changeLanguage(idiom);
   }
-
   const getPersonajes = async () => {
     const res = await axios.get(baseUrl)
     setPersonajes(res.data);
     // console.log(res.data);
+    console.log(res.data);
   }
   useEffect(() => {
 
@@ -46,6 +47,6 @@ export default function Personajes() {
         </div>
       </SimpleBar>
     </div>
-
   )
+
 }
