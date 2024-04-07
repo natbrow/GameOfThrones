@@ -19,9 +19,9 @@ export default function CasasInfo() {
     }, []);
 
     return (
-        <div>
+        <div className="cont">
             {house && (
-                <section className="cont">
+                <section>
                     <div className="cont-logo">
                         <img src={house.image} alt={house.name} className='cont-img' />
                         <h1>{house.name}</h1>
