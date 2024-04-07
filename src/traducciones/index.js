@@ -1,6 +1,6 @@
 import i18next from 'i18next'
-import { eng } from './EN'
-import { esp } from './ES'
+import { eng } from './en/EN'
+import { esp } from './es/ES'
 
 i18next.init({
     interpolation: {

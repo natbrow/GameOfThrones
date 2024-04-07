@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { BrowserRouter as Router, Routes, Route } from "react-dom"
 
 import Menu from '../src/Components/Menu/Menu.jsx'
 import PersonajesPage from './pages/PersonajesPage/PersonajesPage.jsx'
@@ -12,7 +11,6 @@ import CasasPage from './pages/CasasPage/CasasPage.jsx'
 import Home from './pages/Home/Home'
 
 function App() {
-
 
   return (
     <div>
