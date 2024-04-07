@@ -2,10 +2,10 @@
 // import { useTranslation } from 'react-i18next';
 import './Idioma.css';
 import { NavLink } from 'react-router-dom';
+// import i18n from '../src/traducciones/index.js'
 
 export default function Idioma() {
-    // { func }
-    // const { t } = useTranslation();
+
     return (
         <section className='menu'>
             <nav className='menu-der'>
@@ -15,10 +15,14 @@ export default function Idioma() {
                     </NavLink>
                 </li>
                 <li>
-                    <img src="./public/spain.png" className='img' />
+                    <a href='/es/'>
+                        <img src="./public/spain.png" className='img' />
+                    </a>
                 </li>
                 <li>
-                    <img src="./public/united-kingdom.png" className='img' />
+                    <a href='/en/'>
+                        <img src="./public/united-kingdom.png" className='img' />
+                    </a>
                 </li>
             </nav>
 

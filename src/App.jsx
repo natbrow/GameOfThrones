@@ -1,6 +1,8 @@
 // import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
 import Menu from '../src/Components/Menu/Menu.jsx'
 import PersonajesPage from './pages/PersonajesPage/PersonajesPage.jsx'
 import PersonajeID from './pages/PersonajesPage/PersonajeID';
@@ -16,8 +18,7 @@ function App() {
     <div>
       <Router>
         <div >
-          <Menu
-          />
+          <Menu />
         </div>
         <Routes>
           <Route path='/' element={<Home />} />
