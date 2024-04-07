@@ -9,11 +9,11 @@ function Menu() {
   return (
     <nav className='nav-menu'>
       <ul>
-        {/* <li className='nav-menu_li'>
+        <li className='nav-menu_li'>
           <NavLink exact="true" to="/">
             Home
           </NavLink>
-        </li> */}
+        </li>
         <li className='nav-menu_li'>
           <NavLink to="/personajes">
             Personajes

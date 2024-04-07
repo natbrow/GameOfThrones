@@ -5,7 +5,7 @@ import Home from './pages/Home/Home.jsx'
 import CasasPage from './pages/CasasPage/CasasPage.jsx'
 import CasasInfo from './pages/CasasPage/CasasInfo.jsx'
 import CronologiaPage from './pages/CronologiaPage/CronologiaPage.jsx'
-import PersonajesPage from './pages/PersonajesPage/PersonajesPage'
+import PersonajesPage from './pages/PersonajesPage/Personajes.jsx';
 import PersonajesID from './pages/PersonajesPage/PersonajeID'
 
 

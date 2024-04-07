@@ -3,6 +3,8 @@ import './Casas.css';
 import { useState, useEffect } from "react";
 // import CasasInfo from "./CasasInfo";
 import { Link } from "react-router-dom";
+// import SimpleBar from 'simplebar-react';
+// import 'simplebar/dist/simplebar.min.css';
 
 
 export default function Casas() {
@@ -24,9 +26,9 @@ export default function Casas() {
   // };
 
   return (
-
+    // <section className='section'>
+    //   <SimpleBar style={{ maxHeight: 600, color: 'white' }}>
     <div className="contC">
-
       {casas.map((casa, index) => (
         <div key={index} > {/* onClick={() => handleClickCasa(casa)} */}
           <section className="contC-b">
@@ -36,7 +38,10 @@ export default function Casas() {
             </Link>
           </section>
         </div>
+
       ))}
     </div>
+    //   </SimpleBar >
+    // </section >
   );
 }
