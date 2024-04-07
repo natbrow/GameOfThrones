@@ -2,7 +2,6 @@
 // import { useTranslation } from 'react-i18next';
 import './Idioma.css';
 import { NavLink } from 'react-router-dom';
-// import i18n from '../src/traducciones/index.js'
 
 export default function Idioma() {
 

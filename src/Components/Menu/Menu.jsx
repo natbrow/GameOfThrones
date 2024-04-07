@@ -4,7 +4,6 @@ import './Menu.css';
 import Idioma from '../Idioma/Idioma';
 
 
-
 function Menu() {
 
   return (

@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // import 'simplebar/dist/simplebar.min.css';
 
 
+
 export default function Casas() {
   const baseUrl = `http://localhost:3000/houses`;
   const [casas, setCasas] = useState([]);
