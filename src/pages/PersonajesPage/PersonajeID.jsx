@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
+import Volver from "../../Components/Volver/Volver";
 
 
 
@@ -22,6 +23,7 @@ export default function Personaje() {
     }, [])
     return (
         <>
+            <Volver/>
             {character && <div>
 
                 <div className='character-img'>
