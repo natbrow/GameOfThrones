@@ -3,7 +3,7 @@ import './CharacterCard.css'
 
 export default function CharacterCard({ character }) {
   return (
-    <div className=''>
+    <div className='container'>
       <img src={character.image} alt={character.name} />
       <h3>{character.name}</h3>
       <p>{character.age}</p>
