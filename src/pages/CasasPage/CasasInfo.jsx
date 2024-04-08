@@ -2,6 +2,7 @@ import './CasasInfo.css';
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Volver from '../../Components/Volver/Volver';
 
 export default function CasasInfo() {
     const baseUrl = `http://localhost:3000/houses/`;
@@ -20,6 +21,7 @@ export default function CasasInfo() {
 
     return (
         <div className="cont">
+            <Volver/>
             {house && (
                 <section>
                     <div className="cont-logo">
